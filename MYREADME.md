@@ -1,8 +1,8 @@
 # 一、初始模版选择建议
 1、 如果是线上项目，建议将 components 的内容也进行清理，以免影响访问速度，或者直接使用 vue-admin-template 构建项目。
 2、课程选择 vue-element-admin 初始化项目，是因为 vue-element-admin 实现了登录模块，包括 token 校验、网络请求等，可以简化我们的开发工作。
-
-
+npm run dev
+http://www.youbaobao.xyz/admin-docs/guide/exercise/login.html
 
 
 # 二、src 的settings.js 的配置原理
@@ -56,3 +56,24 @@ permission.js：登录认证和路由跳转
 settings.js：全局配置
 main.js：全局入口文件
 App.vue：全局入口组件
+
+
+# 五、bug
+## 1、开发过程中可能会碰到 script 标签中源码的 eslint 关于 indent 的报错
+script 格式化问题
+通过 command + option + L 格式化代码后，script 可能会出现 indent 的警告，解决方案有两种：
+关闭 eslint 中的 indent 检查；
+修改 webstorm 中 indent 设置：
+Webstorm => Preferences => Editor => Code Style => HTML => Other
+在 do not indent of children 中增加 script 即可
+
+
+# 六、代码整理
+1、code -> format Code
+
+2、script 格式化问题
+通过 command + option + L 格式化代码后，script 可能会出现 indent 的警告，解决方案有两种：
+关闭 eslint 中的 indent 检查；
+修改 webstorm 中 indent 设置：
+Webstorm => Preferences => Editor => Code Style => HTML => Other
+在 do not indent of children 中增加 script 即可
